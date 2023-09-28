@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+body{
+    
+    background-color: #6D645F;
+}
+.container{
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+flex-direction: row;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1em;
+
+}
+span.taille{
+    font-size: 25px;
+    
+}
+span.taille, span.couleur{
+    color: #703236;
+}
+img{
+    width: 100%;
+}

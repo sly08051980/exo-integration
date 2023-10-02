@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+
+    <title>Ispace</title>
 </head>
 <body>
     <div class="container">
         <nav>
+            <!--menu pour pc-->
+            <div class="menu-normal">
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT US</a></li>
@@ -17,12 +26,26 @@
                 <li><a href="#">SERVICE</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
+        </div>
+        <!--menu pour tablette mobile-->
+            <div class="menu-burger">
+                <input type="checkbox" id="hamburger">
+                <label di ="hamburger-logo" for="hamburger">☰</label>
+               
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
         </nav>
 
             <main>
-                <h1>MY<span class="taille">H</span><span>ome</span>Space</h1>
+                <h1>My<span class="taille">H</span><span>ome</span>Space</h1>
                 <img src="./assets/images/slider1.jpg" alt="slider1">
-
+<!--partie block de 3 desing-->
                 <div class="aligner">
                     <div class="block-1">
                         <article>
@@ -31,7 +54,10 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio non ea aliquid animi 
                                 saepe officia ut maxime sapiente, maiores quod suscipit architecto itaque error vitae veritatis, labore eius deleniti.
                             </p>
-                            <img class="img-taille" src="./assets/images/plus_btn.png" alt="plus1">
+                            <div class="imagevisible">
+                                <img class="img-taille" src="./assets/images/plus_btn.png" alt="plus1">
+                            
+                            </div>
                         </article>
 
                     </div>
@@ -43,7 +69,9 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio non ea aliquid animi 
                                 saepe officia ut maxime sapiente, maiores quod suscipit architecto itaque error vitae veritatis, labore eius deleniti.
                             </p>
+                            <div class="imagevisible">
                             <img class="img-taille" src="./assets/images/plus_btn.png" alt="plus2">
+                            </div>
                         </article>
                     </div>
                     <div class="block-1">
@@ -53,65 +81,88 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio non ea aliquid animi 
                                 saepe officia ut maxime sapiente, maiores quod suscipit architecto itaque error vitae veritatis, labore eius deleniti.
                             </p>
+                            <div class="imagevisible">
                             <img class="img-taille" src="./assets/images/plus_btn.png" alt="plus3">
+                            </div>
                         </article>
                     </div>
                 </div>
-
+<!--fin de block de 3 design-->
+<!--debut block de 3 ecriture -->
                 <div class="aligner">
                     <div class="block-2">
                             
-                                <h3>Tesimonial</h3>
+                               
                            <div class="graphe" id="graph_puce">
+                            <h3 class="tesiespace">Tesimonial</h3>
                                <ul>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio </li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta 
+                                    aperiam eum sunt cumque dolorem voluptatum</li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe </li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta </li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta 
+                                    aperiam eum sunt</li>
                                </ul>
                         </div>
                     </div>
 
                     <div class="block-2">  
-                            <h3>Tesimonial</h3>
+                           
                            <div class="graphe">
+                            <h3>Prenium services</h3>
                                <ul>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
+                                <li class="couleurli">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+                                
 
                                </ul>
-                               <button>Read More</button>
+                               <div class="lien">
+                               <a href="#" >Read More</a>
+                            </div>
                            </div>
                     </div>
 
                     <div class="block-2">
                             
-                            <h3>Tesimonial</h3>
+                            
                             <div class="graphe">
+                                <h3>About us</h3>
+                               <ul>
+                                <li class="couleurli">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta 
+                                    aperiam eum sunt cumque .</li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
+                                
                               
-                               <ul>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
-                               <ul>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam maiores odio repellendus saepe quia dicta aperiam eum sunt cumque dolorem voluptatum, voluptas eius! Quaerat labore repudiandae perspiciatis at.</li>
                                </ul>
-                               <button>Read More</button>
+                               <div class="lien">
+                                <a href="#" >Read More</a>
+                             </div>
                            </div>
                     </div>
                 </div>
+                <!--fin debut block de 3 ecriture -->
             </main>
 
     <footer>
     <div class="foot">
-        <p>Design By Ispace</p>
+        <div class="foot-foot">
+        <p>Design By</p>
+        <img src="./assets/images/logo.png">
+        </div>
+        <!--debut sprite sheet-->
         <div class="facegris">
-        <img class="reseaux" src="./assets/images/reseaux.png" alt="social">
+            <div class="reseau">
+            <a href="#" id="facebook"></a>
+            <a href="#" id="twitter"></a>
+            <a href="#" id="google"></a>
+           </div>
+        <!--fin sprite sheet-->
+        </div>
+        </div>
     </div>
-    </div>
+
+ 
     </footer>
 
     </div>
